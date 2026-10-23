@@ -8,6 +8,16 @@ An end-to-end, real-time machine learning service and decision-support system bu
 
 ---
 
+## 🌐 Live Hosted Service & Demo
+
+- **Live Public URL (HTTPS):** **[https://e04b4480bd86e7.lhr.life](https://e04b4480bd86e7.lhr.life)**
+- **Interactive API Swagger Docs:** **[https://e04b4480bd86e7.lhr.life/docs](https://e04b4480bd86e7.lhr.life/docs)**
+- **Health Check Endpoint:** **[https://e04b4480bd86e7.lhr.life/health](https://e04b4480bd86e7.lhr.life/health)**
+
+*(Hosted live directly from this repository without requiring any local installation)*
+
+---
+
 ## 1. Executive Summary
 
 - **Business Problem:** Kestrel processes ~750 warranty claims monthly across direct-to-consumer and ~380 service partner outlets. Fraud accounts for ~1.2% to 2.8% of claims. The investigation desk can review at most **40 claims per month** ($k = 40$).

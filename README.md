@@ -1,20 +1,11 @@
 # Kestrel Home — Warranty Claim Review System (Variant C)
 
-[![Tests: Passing](https://img.shields.io/badge/Tests-8%20Passed-success.svg)](file:///C:/Users/Asus/.gemini/antigravity-ide/scratch/kestrel-warranty/tests)
-[![Python: 3.11+](https://img.shields.io/badge/Python-3.11%20%7C%203.12%20%7C%203.13-blue.svg)](file:///C:/Users/Asus/.gemini/antigravity-ide/scratch/kestrel-warranty)
-[![License: Proprietary](https://img.shields.io/badge/License-Internal%20Only-lightgrey.svg)](file:///C:/Users/Asus/.gemini/antigravity-ide/scratch/kestrel-warranty)
+[![Live Demo](https://img.shields.io/badge/LIVE%20DEMO-kestrel--warranty--detection.onrender.com-46E3B7?style=for-the-badge&logo=render&logoColor=white)](https://kestrel-warranty-detection.onrender.com)
+[![API Swagger Docs](https://img.shields.io/badge/API%20DOCS-Swagger%20UI-0284C7?style=for-the-badge&logo=fastapi&logoColor=white)](https://kestrel-warranty-detection.onrender.com/docs)
+[![Tests Passing](https://img.shields.io/badge/TESTS-8%20PASSED-success?style=for-the-badge&logo=pytest&logoColor=white)](https://github.com/Shivam95800/Detection)
 
-An end-to-end, real-time machine learning service and decision-support system built for **Kestrel Home Appliances** (Pune, India) to review, prioritize, and intercept fraudulent warranty claims prior to payout.
-
----
-
-## 🌐 Live Hosted Service & Demo
-
-- **Live Public URL (HTTPS):** **[https://kestrel-warranty-detection.onrender.com](https://kestrel-warranty-detection.onrender.com)**
-- **Interactive API Swagger Docs:** **[https://kestrel-warranty-detection.onrender.com/docs](https://kestrel-warranty-detection.onrender.com/docs)**
-- **Health Check Endpoint:** **[https://kestrel-warranty-detection.onrender.com/health](https://kestrel-warranty-detection.onrender.com/health)**
-
-*(Hosted live directly from this repository without requiring any local installation)*
+> 🚀 **PRODUCTION SERVICE LIVE:** The interactive claim review portal is hosted 24/7 at **[https://kestrel-warranty-detection.onrender.com](https://kestrel-warranty-detection.onrender.com)**.  
+> Open the link to test claims using one-click example buttons and view real-time plain-English risk rationales.
 
 ---
 

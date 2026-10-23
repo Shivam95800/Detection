@@ -1,0 +1,29 @@
+
+--- Page 1 ---
+Kestrel Home Appliances - Operations Policy v4.1
+Internal. Owner: D2C Operations.
+§1 Scope
+This policy covers warranty and Kestrel Shield claims submitted by authorised service centres, franchises and
+freelance technicians (service partners).
+§4 Costs used for decisions
+A genuine claim held for review delays the customer's repair; Kestrel issues goodwill worth Rs 380 on average
+when that happens.
+A fraudulent claim paid out costs the full claim amount. Blended cost of a service contact: Rs 260.
+§5 Claim approval
+Claims are submitted by the service partner with the product serial, a fault description and, where available,
+photos. Until 30 Apr 2026 every claim required partner inspection sign-off.
+From 1 May 2026, claims under Rs 2,000 are auto-approved without inspection to cut turnaround time.
+Larger claims still need inspection.
+The claims investigation desk can review at most 40 claims per month. Investigation outcomes are recorded as
+fraud / not fraud; cases still open at export are undecided.
+§6 Partner onboarding
+Kestrel onboarded about 60 new service partners over the past year to cover tier-2 and tier-3 cities.
+§9 Systems and timestamps
+Until 30 Sep 2025 service and order operations ran on the legacy Zoho Desk instance. From 1 Oct 2025
+everything runs on the Kestrel CRM. Legacy records were migrated in bulk; the source column says which system
+a row came from.
+All timestamps in exports are Indian Standard Time as displayed in the CRM, except resolution events imported
+from the legacy Zoho event log, which were stored in UTC and were not converted during migration.
+§10 Data handling
+Customer and operational data may be shared with approved vendors for analysis. It must not be published,
+uploaded to public repositories or shared beyond the engagement team.

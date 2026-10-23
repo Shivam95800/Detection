@@ -1,0 +1,579 @@
+{
+  "headline_validation": {
+    "window": "June 2026 (Fold 3, Post-May Transition)",
+    "train_size": 11047,
+    "val_size": 767,
+    "val_frauds": 22,
+    "val_base_rate_pct": 2.8683181225554106,
+    "do_nothing_accuracy_pct": 97.13168187744459,
+    "k_eval": 40,
+    "models": {
+      "Policy Rules Baseline": {
+        "roc_auc": 0.7964612568639414,
+        "pr_auc": 0.18157303930090657,
+        "k": 40,
+        "precision_at_k": 0.15,
+        "recall_at_k": 0.2727272727272727,
+        "tp_at_k": 6,
+        "fp_at_k": 34,
+        "threshold_at_k": 0.45,
+        "fraud_rupees_saved": 9173.0,
+        "goodwill_loss": 12920.0,
+        "net_rupees": -3747.0
+      },
+      "HistGradientBoosting": {
+        "roc_auc": 0.9208663819402074,
+        "pr_auc": 0.3136155351440452,
+        "k": 40,
+        "precision_at_k": 0.25,
+        "recall_at_k": 0.45454545454545453,
+        "tp_at_k": 10,
+        "fp_at_k": 30,
+        "threshold_at_k": 0.48114301054277575,
+        "fraud_rupees_saved": 14470.0,
+        "goodwill_loss": 11400.0,
+        "net_rupees": 3070.0
+      },
+      "Hybrid Ensemble": {
+        "roc_auc": 0.9083587553386211,
+        "pr_auc": 0.4659999000349937,
+        "k": 40,
+        "precision_at_k": 0.375,
+        "recall_at_k": 0.6818181818181818,
+        "tp_at_k": 15,
+        "fp_at_k": 25,
+        "threshold_at_k": 0.4655715052713879,
+        "fraud_rupees_saved": 21012.0,
+        "goodwill_loss": 9500.0,
+        "net_rupees": 11512.0
+      }
+    },
+    "bootstrap_ci_95": {
+      "roc_auc": {
+        "mean": 0.9063482349260492,
+        "std": 0.04562622451648758,
+        "ci_lower": 0.7986744510445906,
+        "ci_upper": 0.9734731632998153
+      },
+      "pr_auc": {
+        "mean": 0.4830846611623166,
+        "std": 0.10628004442439605,
+        "ci_lower": 0.28021569835081694,
+        "ci_upper": 0.6963935306974246
+      },
+      "precision_at_k": {
+        "mean": 0.335275,
+        "std": 0.07989085914546169,
+        "ci_lower": 0.175,
+        "ci_upper": 0.5
+      },
+      "recall_at_k": {
+        "mean": 0.6217310797964545,
+        "std": 0.11986820982066702,
+        "ci_lower": 0.3998214285714286,
+        "ci_upper": 0.8636363636363636
+      },
+      "net_rupees_at_k": {
+        "mean": 8440.752,
+        "std": 5850.566486631529,
+        "ci_lower": -2461.9249999999997,
+        "ci_upper": 20175.175
+      }
+    },
+    "sensitivity_investigation_cost": {
+      "Inv_Cost_Rs_0": 11512.0,
+      "Inv_Cost_Rs_182": 4232.0,
+      "Inv_Cost_Rs_260": 1112.0,
+      "Inv_Cost_Rs_338": -2008.0
+    }
+  },
+  "rolling_folds": {
+    "Fold 1 (Pre-May: Dec 2025 - Jan 2026)": {
+      "Policy Rules Baseline": {
+        "roc_auc": 0.8538997409507807,
+        "pr_auc": 0.21120972539828708,
+        "k": 80,
+        "precision_at_k": 0.1125,
+        "recall_at_k": 0.5,
+        "tp_at_k": 9,
+        "fp_at_k": 71,
+        "threshold_at_k": 0.2,
+        "fraud_rupees_saved": 52624.0,
+        "goodwill_loss": 26980.0,
+        "net_rupees": 25644.0
+      },
+      "HistGradientBoosting": {
+        "roc_auc": 0.8461807743471259,
+        "pr_auc": 0.49471216206199237,
+        "k": 80,
+        "precision_at_k": 0.15,
+        "recall_at_k": 0.6666666666666666,
+        "tp_at_k": 12,
+        "fp_at_k": 68,
+        "threshold_at_k": 0.014162993005756614,
+        "fraud_rupees_saved": 92944.0,
+        "goodwill_loss": 25840.0,
+        "net_rupees": 67104.0
+      },
+      "Hybrid Ensemble": {
+        "roc_auc": 0.8817825386823497,
+        "pr_auc": 0.586745383505146,
+        "k": 80,
+        "precision_at_k": 0.175,
+        "recall_at_k": 0.7777777777777778,
+        "tp_at_k": 14,
+        "fp_at_k": 66,
+        "threshold_at_k": 0.10704633037214084,
+        "fraud_rupees_saved": 98621.0,
+        "goodwill_loss": 25080.0,
+        "net_rupees": 73541.0
+      }
+    },
+    "Fold 2 (Pre-May: Mar 2026 - Apr 2026)": {
+      "Policy Rules Baseline": {
+        "roc_auc": 0.7442503479088846,
+        "pr_auc": 0.21120224773748159,
+        "k": 80,
+        "precision_at_k": 0.1125,
+        "recall_at_k": 0.5,
+        "tp_at_k": 9,
+        "fp_at_k": 71,
+        "threshold_at_k": 0.2,
+        "fraud_rupees_saved": 59344.0,
+        "goodwill_loss": 26980.0,
+        "net_rupees": 32364.0
+      },
+      "HistGradientBoosting": {
+        "roc_auc": 0.7267999707024098,
+        "pr_auc": 0.5037258491365642,
+        "k": 80,
+        "precision_at_k": 0.1125,
+        "recall_at_k": 0.5,
+        "tp_at_k": 9,
+        "fp_at_k": 71,
+        "threshold_at_k": 0.009016800285571716,
+        "fraud_rupees_saved": 59344.0,
+        "goodwill_loss": 26980.0,
+        "net_rupees": 32364.0
+      },
+      "Hybrid Ensemble": {
+        "roc_auc": 0.7479674796747967,
+        "pr_auc": 0.507205874773147,
+        "k": 80,
+        "precision_at_k": 0.1125,
+        "recall_at_k": 0.5,
+        "tp_at_k": 9,
+        "fp_at_k": 71,
+        "threshold_at_k": 0.10072916488305642,
+        "fraud_rupees_saved": 59344.0,
+        "goodwill_loss": 26980.0,
+        "net_rupees": 32364.0
+      }
+    },
+    "Fold 3 (Post-May: June 2026)": {
+      "Policy Rules Baseline": {
+        "roc_auc": 0.7964612568639414,
+        "pr_auc": 0.18157303930090657,
+        "k": 40,
+        "precision_at_k": 0.15,
+        "recall_at_k": 0.2727272727272727,
+        "tp_at_k": 6,
+        "fp_at_k": 34,
+        "threshold_at_k": 0.45,
+        "fraud_rupees_saved": 9173.0,
+        "goodwill_loss": 12920.0,
+        "net_rupees": -3747.0
+      },
+      "HistGradientBoosting": {
+        "roc_auc": 0.9208663819402074,
+        "pr_auc": 0.3136155351440452,
+        "k": 40,
+        "precision_at_k": 0.25,
+        "recall_at_k": 0.45454545454545453,
+        "tp_at_k": 10,
+        "fp_at_k": 30,
+        "threshold_at_k": 0.48114301054277575,
+        "fraud_rupees_saved": 14470.0,
+        "goodwill_loss": 11400.0,
+        "net_rupees": 3070.0
+      },
+      "Hybrid Ensemble": {
+        "roc_auc": 0.9083587553386211,
+        "pr_auc": 0.4659999000349937,
+        "k": 40,
+        "precision_at_k": 0.375,
+        "recall_at_k": 0.6818181818181818,
+        "tp_at_k": 15,
+        "fp_at_k": 25,
+        "threshold_at_k": 0.4655715052713879,
+        "fraud_rupees_saved": 21012.0,
+        "goodwill_loss": 9500.0,
+        "net_rupees": 11512.0
+      }
+    }
+  },
+  "segments": {
+    "family": {
+      "Air Fryer": {
+        "total_claims": 122,
+        "fraud_claims": 5,
+        "flagged": 12,
+        "tp": 5,
+        "fp": 7,
+        "fn": 0,
+        "precision": 0.4166666666666667,
+        "recall": 1.0
+      },
+      "Ceiling Fan": {
+        "total_claims": 113,
+        "fraud_claims": 2,
+        "flagged": 5,
+        "tp": 2,
+        "fp": 3,
+        "fn": 0,
+        "precision": 0.4,
+        "recall": 1.0
+      },
+      "Induction Cooktop": {
+        "total_claims": 101,
+        "fraud_claims": 3,
+        "flagged": 5,
+        "tp": 3,
+        "fp": 2,
+        "fn": 0,
+        "precision": 0.6,
+        "recall": 1.0
+      },
+      "Mixer Grinder": {
+        "total_claims": 101,
+        "fraud_claims": 3,
+        "flagged": 4,
+        "tp": 2,
+        "fp": 2,
+        "fn": 1,
+        "precision": 0.5,
+        "recall": 0.6666666666666666
+      },
+      "Robot Vacuum": {
+        "total_claims": 119,
+        "fraud_claims": 4,
+        "flagged": 1,
+        "tp": 0,
+        "fp": 1,
+        "fn": 4,
+        "precision": 0.0,
+        "recall": 0.0
+      },
+      "Room Heater": {
+        "total_claims": 120,
+        "fraud_claims": 3,
+        "flagged": 8,
+        "tp": 2,
+        "fp": 6,
+        "fn": 1,
+        "precision": 0.25,
+        "recall": 0.6666666666666666
+      },
+      "Water Purifier": {
+        "total_claims": 91,
+        "fraud_claims": 2,
+        "flagged": 5,
+        "tp": 1,
+        "fp": 4,
+        "fn": 1,
+        "precision": 0.2,
+        "recall": 0.5
+      }
+    },
+    "partner_type": {
+      "authorised_service_centre": {
+        "total_claims": 352,
+        "fraud_claims": 17,
+        "flagged": 27,
+        "tp": 12,
+        "fp": 15,
+        "fn": 5,
+        "precision": 0.4444444444444444,
+        "recall": 0.7058823529411765
+      },
+      "franchise": {
+        "total_claims": 262,
+        "fraud_claims": 4,
+        "flagged": 12,
+        "tp": 3,
+        "fp": 9,
+        "fn": 1,
+        "precision": 0.25,
+        "recall": 0.75
+      },
+      "freelance_technician": {
+        "total_claims": 153,
+        "fraud_claims": 1,
+        "flagged": 1,
+        "tp": 0,
+        "fp": 1,
+        "fn": 1,
+        "precision": 0.0,
+        "recall": 0.0
+      }
+    },
+    "partner_age_band": {
+      "<6m": {
+        "total_claims": 80,
+        "fraud_claims": 13,
+        "flagged": 19,
+        "tp": 8,
+        "fp": 11,
+        "fn": 5,
+        "precision": 0.42105263157894735,
+        "recall": 0.6153846153846154
+      },
+      "6-12m": {
+        "total_claims": 28,
+        "fraud_claims": 7,
+        "flagged": 10,
+        "tp": 7,
+        "fp": 3,
+        "fn": 0,
+        "precision": 0.7,
+        "recall": 1.0
+      },
+      "1-2y": {
+        "total_claims": 128,
+        "fraud_claims": 0,
+        "flagged": 0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": 0.0
+      },
+      ">2y": {
+        "total_claims": 531,
+        "fraud_claims": 2,
+        "flagged": 11,
+        "tp": 0,
+        "fp": 11,
+        "fn": 2,
+        "precision": 0.0,
+        "recall": 0.0
+      }
+    },
+    "claim_band": {
+      "<1k": {
+        "total_claims": 213,
+        "fraud_claims": 6,
+        "flagged": 9,
+        "tp": 3,
+        "fp": 6,
+        "fn": 3,
+        "precision": 0.3333333333333333,
+        "recall": 0.5
+      },
+      "1k-2k": {
+        "total_claims": 378,
+        "fraud_claims": 15,
+        "flagged": 28,
+        "tp": 12,
+        "fp": 16,
+        "fn": 3,
+        "precision": 0.42857142857142855,
+        "recall": 0.8
+      },
+      "2k-5k": {
+        "total_claims": 115,
+        "fraud_claims": 0,
+        "flagged": 1,
+        "tp": 0,
+        "fp": 1,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": 0.0
+      },
+      ">5k": {
+        "total_claims": 61,
+        "fraud_claims": 1,
+        "flagged": 2,
+        "tp": 0,
+        "fp": 2,
+        "fn": 1,
+        "precision": 0.0,
+        "recall": 0.0
+      }
+    }
+  },
+  "fp_cases": [
+    {
+      "claim_id": "WC711029",
+      "submitted_at": "2026-06-17 22:33",
+      "partner_id": "SP3292",
+      "sku": "KH-RH-01",
+      "family": "Room Heater",
+      "claim_amount_inr": 1525.0,
+      "customer_prior_claims": 1,
+      "score": 0.7482479708091099
+    },
+    {
+      "claim_id": "WC710804",
+      "submitted_at": "2026-06-09 00:41",
+      "partner_id": "SP3318",
+      "sku": "KH-RV-02",
+      "family": "Robot Vacuum",
+      "claim_amount_inr": 1313.0,
+      "customer_prior_claims": 0,
+      "score": 0.6605298544577518
+    },
+    {
+      "claim_id": "WC711024",
+      "submitted_at": "2026-06-17 15:54",
+      "partner_id": "SP3057",
+      "sku": "KH-AF-01",
+      "family": "Air Fryer",
+      "claim_amount_inr": 985.0,
+      "customer_prior_claims": 4,
+      "score": 0.6599136383545057
+    },
+    {
+      "claim_id": "WC710816",
+      "submitted_at": "2026-06-09 09:20",
+      "partner_id": "SP3317",
+      "sku": "KH-RH-01",
+      "family": "Room Heater",
+      "claim_amount_inr": 1995.0,
+      "customer_prior_claims": 0,
+      "score": 0.6482479708091099
+    },
+    {
+      "claim_id": "WC711009",
+      "submitted_at": "2026-06-16 21:44",
+      "partner_id": "SP3318",
+      "sku": "KH-WP-01",
+      "family": "Water Purifier",
+      "claim_amount_inr": 1379.0,
+      "customer_prior_claims": 0,
+      "score": 0.5815520178057906
+    },
+    {
+      "claim_id": "WC711222",
+      "submitted_at": "2026-06-26 02:44",
+      "partner_id": "SP3095",
+      "sku": "KH-WP-03",
+      "family": "Water Purifier",
+      "claim_amount_inr": 13112.0,
+      "customer_prior_claims": 0,
+      "score": 0.5482479708091099
+    },
+    {
+      "claim_id": "WC711165",
+      "submitted_at": "2026-06-23 19:15",
+      "partner_id": "SP3095",
+      "sku": "KH-WP-01",
+      "family": "Water Purifier",
+      "claim_amount_inr": 8237.0,
+      "customer_prior_claims": 1,
+      "score": 0.5482479708091099
+    },
+    {
+      "claim_id": "WC710676",
+      "submitted_at": "2026-06-03 05:38",
+      "partner_id": "SP3130",
+      "sku": "KH-IC-01",
+      "family": "Induction Cooktop",
+      "claim_amount_inr": 767.0,
+      "customer_prior_claims": 2,
+      "score": 0.5402006304922025
+    },
+    {
+      "claim_id": "WC711102",
+      "submitted_at": "2026-06-20 23:00",
+      "partner_id": "SP3232",
+      "sku": "KH-MG-03",
+      "family": "Mixer Grinder",
+      "claim_amount_inr": 2234.0,
+      "customer_prior_claims": 1,
+      "score": 0.5285985323474385
+    },
+    {
+      "claim_id": "WC710893",
+      "submitted_at": "2026-06-12 20:31",
+      "partner_id": "SP3129",
+      "sku": "KH-AF-01",
+      "family": "Air Fryer",
+      "claim_amount_inr": 832.0,
+      "customer_prior_claims": 1,
+      "score": 0.5265115227740036
+    }
+  ],
+  "fn_cases": [
+    {
+      "claim_id": "WC711262",
+      "submitted_at": "2026-06-27 12:38",
+      "partner_id": "SP3275",
+      "sku": "KH-RV-03",
+      "family": "Robot Vacuum",
+      "claim_amount_inr": 17866.0,
+      "customer_prior_claims": 0,
+      "score": 0.05171281692657575
+    },
+    {
+      "claim_id": "WC710711",
+      "submitted_at": "2026-06-04 18:32",
+      "partner_id": "SP3121",
+      "sku": "KH-MG-01",
+      "family": "Mixer Grinder",
+      "claim_amount_inr": 686.0,
+      "customer_prior_claims": 0,
+      "score": 0.19157487507374193
+    },
+    {
+      "claim_id": "WC711279",
+      "submitted_at": "2026-06-28 10:40",
+      "partner_id": "SP3118",
+      "sku": "KH-RV-02",
+      "family": "Robot Vacuum",
+      "claim_amount_inr": 1646.0,
+      "customer_prior_claims": 1,
+      "score": 0.26566582066980715
+    },
+    {
+      "claim_id": "WC711249",
+      "submitted_at": "2026-06-27 01:34",
+      "partner_id": "SP3286",
+      "sku": "KH-WP-02",
+      "family": "Water Purifier",
+      "claim_amount_inr": 999.0,
+      "customer_prior_claims": 1,
+      "score": 0.2662236727631786
+    },
+    {
+      "claim_id": "WC711271",
+      "submitted_at": "2026-06-27 22:24",
+      "partner_id": "SP3286",
+      "sku": "KH-RH-03",
+      "family": "Room Heater",
+      "claim_amount_inr": 1191.0,
+      "customer_prior_claims": 1,
+      "score": 0.35498104816821974
+    },
+    {
+      "claim_id": "WC711116",
+      "submitted_at": "2026-06-21 11:56",
+      "partner_id": "SP3118",
+      "sku": "KH-RV-03",
+      "family": "Robot Vacuum",
+      "claim_amount_inr": 1406.0,
+      "customer_prior_claims": 0,
+      "score": 0.4273617708838925
+    },
+    {
+      "claim_id": "WC710993",
+      "submitted_at": "2026-06-16 06:54",
+      "partner_id": "SP3160",
+      "sku": "KH-RV-03",
+      "family": "Robot Vacuum",
+      "claim_amount_inr": 867.0,
+      "customer_prior_claims": 1,
+      "score": 0.4655715052713879
+    }
+  ]
+}

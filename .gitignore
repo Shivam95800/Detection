@@ -5,3 +5,6 @@ __pycache__/
 venv/
 .venv/
 .env
+
+reports/audio/*.wav
+reports/temp_video.mp4

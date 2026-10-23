@@ -1,6 +1,7 @@
 import os
 from fastapi import FastAPI, HTTPException, status
-from fastapi.responses import HTMLResponse
+from fastapi.responses import HTMLResponse, FileResponse
+from fastapi.staticfiles import StaticFiles
 from fastapi.middleware.cors import CORSMiddleware
 from datetime import datetime
 
@@ -44,6 +45,26 @@ def predict_claim(claim: ClaimInput):
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
             detail=f"Inference error: {str(e)}"
         )
+
+# Static files mount
+reports_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), "reports")
+if os.path.exists(reports_dir):
+    app.mount("/reports", StaticFiles(directory=reports_dir), name="reports")
+
+@app.get("/video", tags=["Presentation"])
+def presentation_video():
+    video_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), "presentation_video.mp4")
+    if os.path.exists(video_path):
+        return FileResponse(video_path, media_type="video/mp4", filename="kestrel_presentation_video.mp4")
+    return HTMLResponse("<h1>Presentation video not found</h1>", status_code=404)
+
+@app.get("/presentation", response_class=HTMLResponse, tags=["Presentation"])
+def presentation_deck():
+    presentation_path = os.path.join(os.path.dirname(__file__), "presentation.html")
+    if os.path.exists(presentation_path):
+        with open(presentation_path, "r", encoding="utf-8") as f:
+            return HTMLResponse(content=f.read())
+    return HTMLResponse(content="<h1>Presentation not found</h1>")
 
 @app.get("/", response_class=HTMLResponse, tags=["UI"])
 def dashboard():

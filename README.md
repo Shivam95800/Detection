@@ -3,9 +3,22 @@
 [![Live Demo](https://img.shields.io/badge/LIVE%20DEMO-kestrel--warranty--detection.onrender.com-46E3B7?style=for-the-badge&logo=render&logoColor=white)](https://kestrel-warranty-detection.onrender.com)
 [![API Swagger Docs](https://img.shields.io/badge/API%20DOCS-Swagger%20UI-0284C7?style=for-the-badge&logo=fastapi&logoColor=white)](https://kestrel-warranty-detection.onrender.com/docs)
 [![Tests Passing](https://img.shields.io/badge/TESTS-8%20PASSED-success?style=for-the-badge&logo=pytest&logoColor=white)](https://github.com/Shivam95800/Detection)
+[![Presentation Video](https://img.shields.io/badge/PRESENTATION%20VIDEO-1080p%20HD-E11D48?style=for-the-badge&logo=youtube&logoColor=white)](https://kestrel-warranty-detection.onrender.com/presentation)
+[![Interactive Slides](https://img.shields.io/badge/SLIDES-9%20Executive%20Cards-8B5CF6?style=for-the-badge&logo=slideshare&logoColor=white)](https://kestrel-warranty-detection.onrender.com/presentation)
 
 > 🚀 **PRODUCTION SERVICE LIVE:** The interactive claim review portal is hosted 24/7 at **[https://kestrel-warranty-detection.onrender.com](https://kestrel-warranty-detection.onrender.com)**.  
-> Open the link to test claims using one-click example buttons and view real-time plain-English risk rationales.
+> 🎬 **PRESENTATION VIDEO & SLIDES:** Watch the executive video walkthrough at **[https://kestrel-warranty-detection.onrender.com/presentation](https://kestrel-warranty-detection.onrender.com/presentation)** (or stream directly via **[/video](https://kestrel-warranty-detection.onrender.com/video)**).
+
+---
+
+### 🎬 Presentation Walkthrough Video (1080p HD)
+Full executive briefing on Farhan's desk economics, Ritu's partner hypothesis, the May 1st exploit, and production architecture:
+
+![Executive Presentation Walkthrough](reports/presentation_walkthrough.gif)
+
+- **Direct MP4 Download/Stream:** [`presentation_video.mp4`](presentation_video.mp4) (Full HD 1080p, 24fps)
+- **Interactive Slide Deck:** [kestrel-warranty-detection.onrender.com/presentation](https://kestrel-warranty-detection.onrender.com/presentation) (with keyboard navigation & chapter markers)
+- **Individual Slide Images:** High-resolution slide graphics stored in [`reports/slides/`](reports/slides/)
 
 ---
 

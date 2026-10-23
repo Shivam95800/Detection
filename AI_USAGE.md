@@ -42,6 +42,9 @@ This document provides a factual disclosure of how AI assistance (Anthropic Clau
 
 ---
 
-## 5. Artifact Verification & Screen Recording
-- **Screen Recording Link:** `[CANDIDATE: INSERT_SCREEN_RECORDING_DRIVE_URL_HERE]`
+## 5. Artifact Verification & Presentation Video
+- **Presentation Video (1080p Full HD):** Stored in repository as [`presentation_video.mp4`](presentation_video.mp4) (8.62 MB, 24fps).
+- **Live Streamable Video & Interactive Deck:** Hosted on Render at **[https://kestrel-warranty-detection.onrender.com/presentation](https://kestrel-warranty-detection.onrender.com/presentation)** (and direct stream at **[https://kestrel-warranty-detection.onrender.com/video](https://kestrel-warranty-detection.onrender.com/video)**).
+- **Animated Walkthrough Preview:** [`reports/presentation_walkthrough.gif`](reports/presentation_walkthrough.gif)
+- **Individual High-Res Slides:** [`reports/slides/`](reports/slides/)
 - **Local Artifact Verification:** All figures, metrics, models, and predictions were executed locally in the environment and validated against ground-truth files.

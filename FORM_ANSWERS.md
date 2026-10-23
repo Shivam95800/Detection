@@ -85,7 +85,10 @@ Yes, on three critical fronts:
 - **Tools & Models Used:** Anthropic Claude 3.5 Sonnet / Gemini via Antigravity IDE for code scaffolding, statistical hypothesis scripts, and rapid data exploration.
 - **Where AI Helped:** Accelerated feature engineering boilerplate (bisecting time-series historical windows), generating clean Matplotlib chart scripts, and writing comprehensive Pydantic/FastAPI schemas.
 - **Where AI Wasted Time / Discarded:** Initial attempts by AI to use linear regression without accounting for the May 1 policy shift produced an inverted relationship on claim amounts (learning that small claims were safe, when post-May they became the primary fraud vector). I discarded the unadjusted model and built the hybrid ensemble incorporating the domain policy rule.
-- **Screen Recording Link:** `[CANDIDATE: INSERT_SCREEN_RECORDING_DRIVE_URL_HERE]`
+- **Presentation Video & Screen Recording:**
+  - **Direct Video File:** [`presentation_video.mp4`](presentation_video.mp4) (Full HD 1080p, 8.62 MB, in repository root).
+  - **Hosted Stream & Deck:** [https://kestrel-warranty-detection.onrender.com/presentation](https://kestrel-warranty-detection.onrender.com/presentation) (with chapter jumps & keyboard slides).
+  - **Direct Video URL:** [https://kestrel-warranty-detection.onrender.com/video](https://kestrel-warranty-detection.onrender.com/video).
 
 ---
 

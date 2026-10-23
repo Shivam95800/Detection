@@ -10,9 +10,9 @@ An end-to-end, real-time machine learning service and decision-support system bu
 
 ## 🌐 Live Hosted Service & Demo
 
-- **Live Public URL (HTTPS):** **[https://e04b4480bd86e7.lhr.life](https://e04b4480bd86e7.lhr.life)**
-- **Interactive API Swagger Docs:** **[https://e04b4480bd86e7.lhr.life/docs](https://e04b4480bd86e7.lhr.life/docs)**
-- **Health Check Endpoint:** **[https://e04b4480bd86e7.lhr.life/health](https://e04b4480bd86e7.lhr.life/health)**
+- **Live Public URL (HTTPS):** **[https://kestrel-warranty-detection.onrender.com](https://kestrel-warranty-detection.onrender.com)**
+- **Interactive API Swagger Docs:** **[https://kestrel-warranty-detection.onrender.com/docs](https://kestrel-warranty-detection.onrender.com/docs)**
+- **Health Check Endpoint:** **[https://kestrel-warranty-detection.onrender.com/health](https://kestrel-warranty-detection.onrender.com/health)**
 
 *(Hosted live directly from this repository without requiring any local installation)*
 
